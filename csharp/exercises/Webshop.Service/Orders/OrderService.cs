@@ -1,4 +1,8 @@
-﻿namespace Webshop.Service;
+﻿using Webshop.Service.Common;
+using Webshop.Service.Products;
+using Webshop.Service.Users;
+
+namespace Webshop.Service.Orders;
 
 public interface IOrderService
 {
@@ -43,7 +47,7 @@ public class OrderService : IOrderService
         // Handle payment
         var paymentAmount = product.Price * quantity;
         // PaymentService is not yet very testable - we will fix this in the last part of the workshop
-        //await _paymentService.HandlePayment(userId, paymentAmount);
+        //_paymentService.HandlePayment(userId, paymentAmount);
 
         // Update inventory
         _productService.SubtractFromProductInventory(productId, quantity);

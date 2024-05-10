@@ -1,4 +1,6 @@
-﻿namespace Webshop.Service;
+﻿using Webshop.Service.Common;
+
+namespace Webshop.Service.Users;
 
 public interface IUserService
 {

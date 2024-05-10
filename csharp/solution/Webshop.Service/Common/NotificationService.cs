@@ -1,4 +1,4 @@
-﻿namespace Webshop.Service;
+﻿namespace Webshop.Service.Common;
 
 public interface INotificationService
 {

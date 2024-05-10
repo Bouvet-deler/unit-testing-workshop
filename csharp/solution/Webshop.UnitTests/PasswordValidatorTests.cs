@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Webshop.Service;
+using Webshop.Service.Common;
 
 namespace Webshop.UnitTests;
 

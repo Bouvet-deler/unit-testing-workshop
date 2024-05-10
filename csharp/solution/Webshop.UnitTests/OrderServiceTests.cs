@@ -1,6 +1,9 @@
 ﻿using FakeItEasy;
 using NUnit.Framework;
-using Webshop.Service;
+using Webshop.Service.Common;
+using Webshop.Service.Orders;
+using Webshop.Service.Products;
+using Webshop.Service.Users;
 
 namespace Webshop.UnitTests;
 

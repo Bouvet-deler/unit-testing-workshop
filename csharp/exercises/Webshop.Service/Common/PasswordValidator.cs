@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Webshop.Service;
+namespace Webshop.Service.Common;
 
 public interface IPasswordValidator
 {
