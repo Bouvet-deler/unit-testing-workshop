@@ -2,7 +2,9 @@ package java.Webshop.Service.Orders;
 
 import java.Webshop.Service.Common.NotificationService;
 import java.Webshop.Service.Products.ProductService;
+import java.Webshop.Service.Users.User;
 import java.Webshop.Service.Users.UserService;
+import java.Webshop.Service.Products.Product;
 
 import java.util.Objects;
 
