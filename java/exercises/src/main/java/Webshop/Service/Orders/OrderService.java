@@ -5,6 +5,7 @@ import java.Webshop.Service.Products.ProductService;
 import java.Webshop.Service.Users.User;
 import java.Webshop.Service.Users.UserService;
 import java.Webshop.Service.Products.Product;
+import java.Webshop.Service.Orders.OrderResultCode;
 
 import java.util.Objects;
 
@@ -94,9 +95,3 @@ class OrderResult {
     }
 }
 
-enum OrderResultCode {
-    Successful,
-    ProductNotFound,
-    OutOfStock,
-    PaymentFailed
-}
