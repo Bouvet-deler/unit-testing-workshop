@@ -1,6 +1,7 @@
-package java.Webshop.Service.Payment;
+package Webshop.Service.Payment;
 
-import java.Webshop.Service.Common.Logger;
+import Webshop.Service.Common.Logger;
+import Webshop.Service.Payment.ThirdPartyPaymentSystemClient;
 
 public class ThirdPartyPaymentIntegration {
     private final ThirdPartyPaymentSystemClient client;

@@ -1,11 +1,11 @@
-package java.Webshop.Service.Orders;
+package Webshop.Service.Orders;
 
-import java.Webshop.Service.Common.NotificationService;
-import java.Webshop.Service.Products.ProductService;
-import java.Webshop.Service.Users.User;
-import java.Webshop.Service.Users.UserService;
-import java.Webshop.Service.Products.Product;
-import java.Webshop.Service.Orders.OrderResultCode;
+import Webshop.Service.Common.NotificationService;
+import Webshop.Service.Products.ProductService;
+import Webshop.Service.Users.User;
+import Webshop.Service.Users.UserService;
+import Webshop.Service.Products.Product;
+import Webshop.Service.Orders.OrderResultCode;
 
 import java.util.Objects;
 

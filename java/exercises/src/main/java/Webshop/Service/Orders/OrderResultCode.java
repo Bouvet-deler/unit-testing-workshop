@@ -1,4 +1,4 @@
-package java.Webshop.Service.Orders;
+package Webshop.Service.Orders;
 
 public enum OrderResultCode {
     Successful,

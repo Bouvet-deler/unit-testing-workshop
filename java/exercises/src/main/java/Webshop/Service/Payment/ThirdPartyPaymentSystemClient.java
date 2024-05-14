@@ -1,4 +1,4 @@
-package java.Webshop.Service.Payment;
+package Webshop.Service.Payment;
 
 public class ThirdPartyPaymentSystemClient {
     public void waitForConnection() throws InterruptedException {

@@ -1,4 +1,4 @@
-package java.Webshop.Service.Common;
+package Webshop.Service.Common;
 
 interface INotificationService {
     void sendMail(String recipientEmail, String message);

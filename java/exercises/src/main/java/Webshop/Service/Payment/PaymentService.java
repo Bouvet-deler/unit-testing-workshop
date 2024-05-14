@@ -1,9 +1,12 @@
-package java.Webshop.Service.Payment;
+package Webshop.Service.Payment;
 
-import java.Webshop.Service.Common.Logger;
-import java.Webshop.Service.Common.NotificationService;
-import java.Webshop.Service.Users.UserRepository;
-import java.Webshop.Service.Users.UserService;
+import Webshop.Service.Common.Logger;
+import Webshop.Service.Common.NotificationService;
+import Webshop.Service.Users.UserRepository;
+import Webshop.Service.Users.UserService;
+import Webshop.Service.Common.PasswordValidator;
+import Webshop.Service.Users.UserRepository;
+import Webshop.Service.Users.User;
 
 interface IPaymentService {
     void handlePayment(String userId, double amountInNok);
@@ -19,7 +22,7 @@ public class PaymentService implements IPaymentService {
     @Override
     public void handlePayment(String userId, double amountInNok) {
         UserService userService = new UserService(new UserRepository(), new PasswordValidator());
-        UserRepository user = userService.getUser(userId);
+        User user = userService.getUser(userId);
         if (user == null) {
             Logger.logError("Attempted to handle payment for non-existing user " + userId);
             throw new RuntimeException("Could not find user with id " + userId);

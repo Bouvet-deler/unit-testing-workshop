@@ -1,4 +1,4 @@
-package java.Webshop.Service.Products;
+package Webshop.Service.Products;
 
 interface IProductService {
     Product getProduct(String id);

@@ -1,4 +1,4 @@
-package java.Webshop.Service.Common;
+package Webshop.Service.Common;
 
 import java.io.FileWriter;
 import java.io.IOException;

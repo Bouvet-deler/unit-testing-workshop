@@ -1,4 +1,4 @@
-package java.Webshop.Service.Common;
+package Webshop.Service.Common;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package java.Webshop.Service.Orders;
+package Webshop.Service.Orders;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package java.Webshop.Service.Users;
+package Webshop.Service.Users;
 
 public class User {
     private String id;

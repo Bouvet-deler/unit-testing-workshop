@@ -1,4 +1,4 @@
-package java.Webshop.Service.Users;
+package Webshop.Service.Users;
 
 import java.util.HashMap;
 import java.util.Map;

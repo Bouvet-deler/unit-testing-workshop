@@ -1,7 +1,7 @@
-package java.Webshop.Service.Users;
+package Webshop.Service.Users;
 
 import java.util.UUID;
-import java.Webshop.Service.Common.PasswordValidator;
+import Webshop.Service.Common.PasswordValidator;
 
 interface IUserService {
     User createUser(String email, String firstName, String lastName, String password) throws InvalidPasswordException;

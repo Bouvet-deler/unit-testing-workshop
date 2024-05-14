@@ -1,4 +1,4 @@
-package java.Webshop.Service.Products;
+package Webshop.Service.Products;
 
 public class Product {
     private String id;

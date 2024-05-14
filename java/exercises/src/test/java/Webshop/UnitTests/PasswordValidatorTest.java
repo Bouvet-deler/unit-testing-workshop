@@ -1,10 +1,10 @@
-package test.java.Webshop.UnitTests;
+package Webshop.UnitTests;
 
-import java.Webshop.Service.Common.PasswordValidator;
+import Webshop.Service.Common.PasswordValidator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class PasswordValidatorTests {
+public class PasswordValidatorTest {
 
     @Test
     public void myFirstTest() {
@@ -18,3 +18,5 @@ public class PasswordValidatorTests {
         // TODO: Write your assertions here
     }
 }
+
+// mvn -Dtest=PasswordValidatorTest#myFirstTest test
