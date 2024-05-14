@@ -1,5 +1,6 @@
 package Webshop.UnitTests;
 
+import Webshop.Service.Orders.OrderRepository;
 import org.junit.jupiter.api.Test;
 
 import Webshop.Service.Common.NotificationService;
@@ -12,7 +13,7 @@ import Webshop.Service.Orders.OrderResult;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-public class OrderServiceTest {
+public class OrderServiceTests {
     @Test
     public void placeOrder_whenProductIsNotFound_shouldReturnProductNotFound() {
         ProductService productService = mock(ProductService.class);
@@ -21,8 +22,7 @@ public class OrderServiceTest {
 
         when(productService.getProduct("product1")).thenReturn(null); // Simulate that product does not exist
 
-        OrderService orderService = new OrderService(null, productService, userService, notificationService);
-
+        OrderService orderService = new OrderService(new OrderRepository(), productService, userService, notificationService);
 
         OrderResult orderResult = orderService.placeOrder("product1", 1, "user1");
 
@@ -32,4 +32,4 @@ public class OrderServiceTest {
 }
 
 // Run the test with the following command:
-// mvn -Dtest=OrderServiceTest test
+// mvn -Dtest=OrderServiceTests test
