@@ -4,22 +4,7 @@ namespace Webshop.Service.Users;
 
 public interface IUserService
 {
-    /// <summary>
-    /// Creates a new user
-    /// </summary>
-    /// <param name="email">Email</param>
-    /// <param name="firstName">First name</param>
-    /// <param name="lastName">Last name</param>
-    /// <param name="password">Password</param>
-    /// <returns>The created user with a generated unique id</returns>
-    /// <exception cref="InvalidPasswordException">Thrown if password does not meet requirements</exception>
     User CreateUser(string email, string firstName, string lastName, string password);
-
-    /// <summary>
-    /// Returns user with the specified id
-    /// </summary>
-    /// <param name="userId">The id of the user to return</param>
-    /// <returns>User with specified id, or NULL if not found</returns>
     User? GetUser(string userId);
 }
 
