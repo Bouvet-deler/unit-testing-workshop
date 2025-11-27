@@ -38,4 +38,4 @@ public class PasswordValidatorTests {
 }
 
 
-// mvn -Dtest=PasswordValidatorTest test
+// mvn -Dtest=PasswordValidatorTests test

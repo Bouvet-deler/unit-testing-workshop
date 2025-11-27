@@ -94,4 +94,5 @@ public class OrderServiceTests {
 // mvn -Dtest=OrderServiceTests test
 
 // Run a single test with the following command:
+// maven           Test file                  Specific test method                          run test
 // mvn -Dtest=OrderServiceTests#placeOrder_whenProductIsNotFound_shouldReturnProductNotFound test

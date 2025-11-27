@@ -57,3 +57,4 @@ public class UserServiceTests {
     }
 }
 
+// mvn -Dtest=UserServiceTests test
