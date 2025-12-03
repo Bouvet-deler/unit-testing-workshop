@@ -25,6 +25,7 @@ public class OrderService implements IOrderService {
         this.productService = Objects.requireNonNull(productService, "Product service must not be null");
         this.userService = Objects.requireNonNull(userService, "User service must not be null");
         this.notificationService = Objects.requireNonNull(notificationService, "Notification service must not be null");
+
     }
 
     @Override
@@ -55,7 +56,7 @@ public class OrderService implements IOrderService {
         // Handle payment
         double paymentAmount = product.getPrice() * quantity;
         // PaymentService is not yet very testable - we will fix this in the last part of the workshop
-        //paymentService.handlePayment(userId, paymentAmount);
+//        paymentService.handlePayment(userId, paymentAmount);
 
         // Update inventory
         productService.subtractFromProductInventory(productId, quantity);

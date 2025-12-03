@@ -73,3 +73,4 @@ public class PaymentServiceTests {
     }
 }
 
+// mvn -Dtest=PaymentServiceTests test

@@ -4,7 +4,7 @@ import java.util.UUID;
 import Webshop.Service.Common.PasswordValidator;
 
 interface IUserService {
-    User createUser(String email, String firstName, String lastName, String password) throws InvalidPasswordException;
+    User createUser(String id, String email, String firstName, String lastName, String password) throws InvalidPasswordException;
     User getUser(String userId);
 }
 
@@ -18,12 +18,12 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User createUser(String email, String firstName, String lastName, String password) throws InvalidPasswordException {
+    public User createUser(String id, String email, String firstName, String lastName, String password) throws InvalidPasswordException {
         if (!passwordValidator.isValidPassword(password)) {
             throw new InvalidPasswordException("Password does not meet requirements");
         }
 
-        String id = UUID.randomUUID().toString();
+//        String id = UUID.randomUUID().toString();
 
         return userRepository.addUser(id, email, firstName, lastName, password);
     }
@@ -34,9 +34,4 @@ public class UserService implements IUserService {
     }
 }
 
-class InvalidPasswordException extends Exception {
-    public InvalidPasswordException(String message) {
-        super(message);
-    }
-}
 
