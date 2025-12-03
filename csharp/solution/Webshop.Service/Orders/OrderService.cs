@@ -54,7 +54,8 @@ public class OrderService : IOrderService
 
         // Send notification
         var user = _userService.GetUser(userId);
-        _notificationService.SendMail(user.Email, $"Order confirmation: Your order for product {productId} has been succesful.");
+        if (user != null)
+            _notificationService.SendMail(user.Email, $"Order confirmation: Your order for product {productId} has been succesful.");
 
         // Create and return order
         var order = _orderRepository.AddOrder(productId, quantity, userId);

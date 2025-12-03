@@ -36,7 +36,7 @@ public class OrderServiceTests
         var userService = A.Fake<IUserService>();
         var notificationService = A.Fake<INotificationService>();
 
-        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product()); // Make sure the product exists
+        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product { Id = "product1" }); // Make sure the product exists
         A.CallTo(() => productService.GetProductInventory("product1")).Returns(0); // Simulate that inventory is empty
 
         var orderService = new OrderService(orderRepository, productService, userService, notificationService);
@@ -55,7 +55,7 @@ public class OrderServiceTests
         var userService = A.Fake<IUserService>();
         var notificationService = A.Fake<INotificationService>();
 
-        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product()); // Make sure the product exists
+        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product { Id = "product1" }); // Make sure the product exists
         A.CallTo(() => productService.GetProductInventory("product1")).Returns(4); // Simulate that inventory has enough items
 
         var orderService = new OrderService(orderRepository, productService, userService, notificationService);
@@ -74,7 +74,7 @@ public class OrderServiceTests
         var userService = A.Fake<IUserService>();
         var notificationService = A.Fake<INotificationService>();
 
-        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product()); // Make sure the product exists
+        A.CallTo(() => productService.GetProduct("product1")).Returns(new Product { Id = "product1" }); // Make sure the product exists
         A.CallTo(() => productService.GetProductInventory("product1")).Returns(1); // Simulate that inventory has enough items
 
         var orderService = new OrderService(orderRepository, productService, userService, notificationService);

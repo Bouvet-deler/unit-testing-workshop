@@ -34,6 +34,6 @@ public class ProductRepository : IProductRepository
 
 public class Product
 {
-    public string Id { get; set; }
+    public required string Id { get; set; }
     public decimal Price { get; set; }
 }

@@ -19,8 +19,8 @@ public class OrderRepository : IOrderRepository
 
 public class Order
 {
-    public string OrderId { get; set; }
-    public string ProductId { get; set; }
+    public required string OrderId { get; set; }
+    public required string ProductId { get; set; }
     public int Quantity { get; set; }
-    public string UserId { get; set; }
+    public required string UserId { get; set; }
 }
