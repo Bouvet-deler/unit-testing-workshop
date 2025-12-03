@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34723.18
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.Service", "Webshop.Service\Webshop.Service.csproj", "{5FB6DBF3-FADE-4CEC-BCB2-712D08E78404}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.UnitTests", "Webshop.UnitTests\Webshop.UnitTests.csproj", "{EC53CB0B-9DBE-4B6A-B989-130707E76D75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD929CD7-663C-4535-B5CC-026BB27C9ADB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.github\copilot-instructions.md = ..\..\.github\copilot-instructions.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
