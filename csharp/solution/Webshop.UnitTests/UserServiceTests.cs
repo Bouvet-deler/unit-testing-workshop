@@ -22,7 +22,7 @@ public class UserServiceTests
         {
             exceptionThrown = true;
         }
-        Assert.IsTrue(exceptionThrown);
+        Assert.That(exceptionThrown, Is.True);
 
         // Alternative 2 (using Assert.Throws):
         //Assert.Throws<InvalidPasswordException>(() => userService.CreateUser("valid@email.com", "Test", "User", "12345678"));
